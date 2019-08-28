@@ -28,6 +28,12 @@ public class ProductController {
     @Autowired
     private ProductDao productDao;
 
+    //Calculer la marge des produits
+    @GetMapping(value = "/AdminProduits")
+    public List<Product> calculerMargeProduit () {
+        return null;
+    }
+
 
     // Récupérer la liste des produits (sans filtre)
     @RequestMapping(value="/Produits/Trier", method = RequestMethod.GET)
